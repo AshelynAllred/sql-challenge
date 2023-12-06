@@ -1,7 +1,7 @@
-# sql-challenge
+# SQL Challenge
 Challenge project done using (Postgre)SQL as part of a data analytics bootcamp.
 
-## Where to find everything
+## Where to Find Everything
 * All challenge work is located in the `employee_sql` folder.
   * Data modeling resources I made as part of the challenge are available within `employee_sql/modeling/`
     * Both light-theme and dark-theme graph `.png` files are available,  
