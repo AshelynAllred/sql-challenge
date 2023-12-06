@@ -16,7 +16,7 @@ Tool | Purpose
 -- | --
 Git CLI | Should be self-explanatory
 VSCode | Organizing files/folders, touching up comments and documentation, paging through `.csv` files
-Rainbow CSV | VSCode Plugin; Made `.csv` navigation within VSCode much easier.
+Rainbow CSV | VSCode Plugin; Made `.csv` (and `.tsv`) navigation within VSCode much easier.
 QuickDBD | Modeling data relationships prior to table creation.
 pgAdmin 4 | PostgreSQL database creation, importing `data/*.csv` files to corresponding tables, executing and developing/debugging SQL queries, collecting table outputs from queries.
 ChatGPT 3.5 | Asking relatively simple questions regarding syntax and general methods. Greatly increased my time efficiency working on this challenge. It was recommended by the instructor during class that we use this tool.
