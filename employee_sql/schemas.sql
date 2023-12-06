@@ -48,8 +48,8 @@ CREATE TABLE departments (
 CREATE TABLE dept_emp (
 	emp_no INT NOT NULL,
 	dept_no VARCHAR(4) NOT NULL,
-    -- using composite key because neither values are unique across the data
-    PRIMARY KEY (emp_no, dept_no),
+	-- using composite key because neither values are unique across the data
+	PRIMARY KEY (emp_no, dept_no),
 	FOREIGN KEY (emp_no) REFERENCES employees(emp_no),
 	FOREIGN KEY (dept_no) REFERENCES departments(dept_no)
 );
@@ -57,11 +57,11 @@ CREATE TABLE dept_emp (
 CREATE TABLE dept_manager (
 	dept_no VARCHAR(4) NOT NULL,
 	emp_no INT NOT NULL,
-    -- dept_no is not unique
-    -- emp_no IS unique in this table, but it seems a bad idea to make the primary key
-    -- as there could ostensibly be situations where an employee manages multiple departments at a time
-    -- -
-    -- using composite key instead:
+	-- dept_no is not unique
+	-- emp_no IS unique in this table, but it seems a bad idea to make the primary key
+	-- as there could ostensibly be situations where an employee manages multiple departments at a time
+	-- -
+	-- using composite key instead:
 	PRIMARY KEY (dept_no, emp_no),
 	FOREIGN KEY (dept_no) REFERENCES departments(dept_no),
 	FOREIGN KEY (emp_no) REFERENCES employees(emp_no)
